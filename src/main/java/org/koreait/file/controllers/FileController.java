@@ -28,7 +28,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/file")
 @RequiredArgsConstructor
-public class ApiFileController {
+public class FileController {
 
     private final Utils utils;
 
