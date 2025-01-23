@@ -159,4 +159,14 @@ public class FileController {
     public void select(@PathVariable("seq") Long seq) {
         imageService.select(seq);
     }
+
+    /**
+     * 파일 그룹작업 완료 처리
+     *
+     * @param gid
+     * @param location
+     */
+    public void processDone(@PathVariable("gid") String gid, @RequestParam(name = "location", required = false) String location) {
+        doneService.process(gid, location);
+    }
 }
