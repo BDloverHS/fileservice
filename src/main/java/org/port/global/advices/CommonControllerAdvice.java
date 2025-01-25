@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 @RequiredArgsConstructor
-@RestControllerAdvice(annotations = RestController.class, basePackages = "org.koreait")
+@RestControllerAdvice(annotations = RestController.class, basePackages = "org.port")
 public class CommonControllerAdvice {
 
     private final Utils utils;
